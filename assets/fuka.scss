@@ -1,9 +1,21 @@
+$color1: #F4F1DC;
+$color2: #80B6BF;
 
-// $color
-#headear{
+#headear {
     max-width: 1400px;
 }
 
-.headder-inner{
-position: relative;
-}
+.headder-inner {
+    position: relative;
+
+    .main-left {
+        position: absolute;
+    }
+
+    .hedear-navigation {
+        position: fixed;
+        width: 100%;
+        height: 12vh;
+        $color1: #F4F1DC;
+    }
+};

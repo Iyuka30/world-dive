@@ -4,4 +4,12 @@
 
 .headder-inner {
   position: relative;
+}
+.headder-inner .main-left {
+  position: absolute;
+}
+.headder-inner .hedear-navigation {
+  position: fixed;
+  width: 100%;
+  height: 12vh;
 }/*# sourceMappingURL=fuka.css.map */
