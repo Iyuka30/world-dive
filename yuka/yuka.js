@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("#submit").click(function (e) {
       //JSONデータ取得 日本語で天気名を表示したいのでlang=ja　として日本語表記データを取得
       // $.post("http://api.openweathermap.org/data/2.5/weather?id=" + $("input[id='cityRadio']:checked").val() + "&appid=cc05750ba50400f27ebabbcd6f4c4976&lang=ja&units=metric",  
-      $.post("http://api.openweathermap.org/data/2.5/weather?id=" + $("input[id='cityRadio']:checked").val() + "&appid=cc05750ba50400f27ebabbcd6f4c4976&lang=ja&units=metric",  
+      $.post("http://api.openweathermap.org/data/2.5/weather?id=" + $("input[id='cityRadio']:checked").val() + "&appid=4791b21ce1b5643034c8d3b29ca534f9&lang=ja&units=metric",  
           function(json){
               $("#weather").html(json.weather[0].description);
               $("#humidity").html(json.main.humidity);

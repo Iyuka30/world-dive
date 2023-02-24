@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* h2{
+  background-color: #80B6BF;  イメージカラー
+  background-color: #f4f1dc;　　ヘッダー＆フッダー
+} */
+body {
+  color: #002222;
+  background-color: #80B6BF;
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#cityRadio {
+  font-size: 20px;
+}
+
+img {
+  width: 100px;
+}
+
+.container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+input {
+  margin: 2%;
+}
+
+#submit {
+  margin-left: 10px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.5em;
+}/*# sourceMappingURL=yuka.css.map */

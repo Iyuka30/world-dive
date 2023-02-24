@@ -5,31 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./yuka.css">
+  <link rel="stylesheet" href="../assets/css/yuka.css">
 </head>
 <body>
 
-    <h1>各地のお天気は？</h1>
-    <div>
+  <!-- 天気予報 -->
+  <section class="whether">
+    <div class="whether-box" id="wrapper">
+      <h1>各地のお天気は？</h1>
       <h2>都市の選択</h2>
-        <input type="radio" id="cityRadio" name="cityRadio" value="1894616">沖縄
-        <input type="radio" id="cityRadio" name="cityRadio" value="7839805">オーストラリア
-        <input type="radio" id="cityRadio" name="cityRadio" value="3531673">メキシコ
-        <input type="radio" id="cityRadio" name="cityRadio" value="5855765">ハワイ
-        <input type="radio" id="cityRadio" name="cityRadio" value="524901">パラオ
-        <input type="radio" id="cityRadio" name="cityRadio" value="2643743">バリ
-        <!-- <input type="radio" id="cityRadio" name="cityRadio" value="2172797">Cairns -->
+      <div>
+        <input type="radio" id="cityRadio" name="cityRadio" value="1854345">沖縄
+        <input type="radio" id="cityRadio" name="cityRadio" value="2172797">オーストラリア -ケアンズ-
+        <input type="radio" id="cityRadio" name="cityRadio" value="3531673">メキシコ -カンクン-
+        <input type="radio" id="cityRadio" name="cityRadio" value="5856195">ハワイ -ホノルル-
+        <input type="radio" id="cityRadio" name="cityRadio" value="1559582">パラオ
+        <input type="radio" id="cityRadio" name="cityRadio" value="1643084">バリ
         <button id="submit"><i class="fas fa-paper-plane"></i>  Click</button>
-    </div> 
-    <div class="weatherMain"> 
+      </div> 
+      <div class="weatherMain"> 
         <h2>現在の天気は</h2>
         <div><span id = "weather" class="bold"></span></div>
         <div><span id = "weatherMark" class="bold"></span></div>
         <p id="icon"></p>
+      </div>
+      <div>気温　<span id = "temp"  class="bold"></span>　℃</div>
+      <div>湿度　<span id = "humidity" class="bold"></span>　%</div>
+      
     </div>
-    <div>気温　<span id = "temp"  class="bold"></span>　℃</div>
-    <div>湿度　<span id = "humidity" class="bold"></span>　%</div>
-</div>
+  </section>
+  <footer class="footer">
+    <span><small>&copy;</small>202302</span>
+  </footer>
+
 
   
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
