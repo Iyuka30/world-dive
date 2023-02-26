@@ -7,8 +7,12 @@ body {
   text-align: center;
 }
 
-img {
-  width: 100px;
+.whether-box h1 {
+  font-size: 30px;
+}
+
+.city-list {
+  margin: 50px auto 20px;
 }
 
 .container {
@@ -25,21 +29,12 @@ input {
   font-size: 1.5em;
 }
 
-footer {
-  background-color: #f4f1dc;
+#cityRadio {
+  margin-left: 30px;
 }
 
-.btn {
-  border: 1px solid #80B6BF;
-  border-radius: 25px;
+img {
   width: 100px;
-  padding: 20px;
-  background-color: #80B6BF;
-}
-
-.btn:hover {
-  background-color: #f4f1dc;
-  transition: all 0.5s;
 }
 
 input[type=radio] {
@@ -78,4 +73,41 @@ input[type=radio]::after {
 
 input[type=radio]:checked::after {
   opacity: 1;
+  font-weight: bold;
+}
+
+input[type=radio]:checked + label {
+  font-weight: bold;
+}
+
+label {
+  font-size: 20px;
+}
+
+.btn {
+  border: 2px solid #80B6BF;
+  border-radius: 50px;
+  width: 150px;
+  padding: 15px;
+  background-color: #80B6BF;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-solid {
+  margin-left: 5px;
+}
+
+.btn:hover {
+  background-color: #f4f1dc;
+  transition: all 0.5s;
+}
+
+footer {
+  background-color: #f4f1dc;
+  padding: 10px 20px;
+}
+
+.footer span {
+  padding: 20px 20px;
 }/*# sourceMappingURL=yuka.css.map */

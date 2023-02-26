@@ -15,17 +15,17 @@
   <section class="whether">
     <div class="whether-box" id="wrapper">
       <h1>各地のお天気は？</h1>
-      <h2>都市の選択</h2>
-      <div>
-        <label><input type="radio" id="cityRadio" name="cityRadio" value="1854345">沖縄</label>
-        <label><input type="radio" id="cityRadio" name="cityRadio" value="2172797">オーストラリア -ケアンズ-</label>
-        <label><input type="radio" id="cityRadio" name="cityRadio" value="3531673">メキシコ -カンクン-</label>
+      <!-- <h2>都市の選択</h2> -->
+      <div class="city-list">
+        <input type="radio" id="cityRadio" name="cityRadio" value="1854345"><label for="radio">沖縄</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="2172797"><label for="radio">オーストラリア -ケアンズ-</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="3531673"><label for="radio">メキシコ -カンクン-</label>
         <br>
-        <label><input type="radio" id="cityRadio" name="cityRadio" value="5856195">ハワイ -ホノルル-</label>
-        <label><input type="radio" id="cityRadio" name="cityRadio" value="1559582">パラオ</label>
-        <label><input type="radio" id="cityRadio" name="cityRadio" value="1643084">インドネシア -バリ-</label>        
+        <input type="radio" id="cityRadio" name="cityRadio" value="5856195"><label for="radio">ハワイ -ホノルル-</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="1559582"><label for="radio">パラオ</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="1643084"><label for="radio">インドネシア -バリ-</label>
       </div> 
-      <button class="btn"><i class="fas fa-paper-plane"></i>  Click</button>
+      <button class="btn">Click<i class="fa-solid fa-hand-pointer"></i></button>
       <div class="weatherMain"> 
         <h2>現在の天気は</h2>
         <div><span id = "weather" class="bold"></span></div>
@@ -36,30 +36,13 @@
       <div>湿度　<span id = "humidity" class="bold"></span>　%</div>
       <div>風速　<span id = "speed" class="bold"></span>　m</div>
       <div>風向　<span id = "deg" class="bold"></span>　度</div>
-
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
   <footer>
     <div class="footer">
       <span><small>&copy;</small>202302</span>
     </div>
   </footer>
-  
-
-
-  
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="./yuka.js"></script>
 </body>
