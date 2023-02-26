@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#submit").click(function (e) {
+  $(".btn").click(function (e) {
       //JSONデータ取得 日本語で天気名を表示したいのでlang=ja　として日本語表記データを取得
       // $.post("http://api.openweathermap.org/data/2.5/weather?id=" + $("input[id='cityRadio']:checked").val() + "&appid=cc05750ba50400f27ebabbcd6f4c4976&lang=ja&units=metric",  
       $.post("http://api.openweathermap.org/data/2.5/weather?id=" + $("input[id='cityRadio']:checked").val() + "&appid=4791b21ce1b5643034c8d3b29ca534f9&lang=ja&units=metric",  
@@ -8,7 +8,9 @@ $(document).ready(function() {
               $("#humidity").html(json.main.humidity);
               //lang=jaにすることで華氏から摂氏に変換することなく摂氏表示となる。小数点だけ丸める処理をする
               $("#temp").html(Math.round(json.main.temp));
-
+              $("#speed").html(json.wind.speed);
+              $("#deg").html(json.wind.deg);
+              
               //天気に応じた天気アイコンを表示させる
               switch (json.weather[0].main){
               case 'Clouds':

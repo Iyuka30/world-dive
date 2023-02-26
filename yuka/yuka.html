@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../assets/css/yuka.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 <body>
 
@@ -15,14 +17,15 @@
       <h1>各地のお天気は？</h1>
       <h2>都市の選択</h2>
       <div>
-        <input type="radio" id="cityRadio" name="cityRadio" value="1854345">沖縄
-        <input type="radio" id="cityRadio" name="cityRadio" value="2172797">オーストラリア -ケアンズ-
-        <input type="radio" id="cityRadio" name="cityRadio" value="3531673">メキシコ -カンクン-
-        <input type="radio" id="cityRadio" name="cityRadio" value="5856195">ハワイ -ホノルル-
-        <input type="radio" id="cityRadio" name="cityRadio" value="1559582">パラオ
-        <input type="radio" id="cityRadio" name="cityRadio" value="1643084">バリ
-        <button id="submit"><i class="fas fa-paper-plane"></i>  Click</button>
+        <label><input type="radio" id="cityRadio" name="cityRadio" value="1854345">沖縄</label>
+        <label><input type="radio" id="cityRadio" name="cityRadio" value="2172797">オーストラリア -ケアンズ-</label>
+        <label><input type="radio" id="cityRadio" name="cityRadio" value="3531673">メキシコ -カンクン-</label>
+        <br>
+        <label><input type="radio" id="cityRadio" name="cityRadio" value="5856195">ハワイ -ホノルル-</label>
+        <label><input type="radio" id="cityRadio" name="cityRadio" value="1559582">パラオ</label>
+        <label><input type="radio" id="cityRadio" name="cityRadio" value="1643084">インドネシア -バリ-</label>        
       </div> 
+      <button class="btn"><i class="fas fa-paper-plane"></i>  Click</button>
       <div class="weatherMain"> 
         <h2>現在の天気は</h2>
         <div><span id = "weather" class="bold"></span></div>
@@ -31,12 +34,29 @@
       </div>
       <div>気温　<span id = "temp"  class="bold"></span>　℃</div>
       <div>湿度　<span id = "humidity" class="bold"></span>　%</div>
-      
+      <div>風速　<span id = "speed" class="bold"></span>　m</div>
+      <div>風向　<span id = "deg" class="bold"></span>　度</div>
+
     </div>
   </section>
-  <footer class="footer">
-    <span><small>&copy;</small>202302</span>
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="footer">
+      <span><small>&copy;</small>202302</span>
+    </div>
   </footer>
+  
 
 
   
