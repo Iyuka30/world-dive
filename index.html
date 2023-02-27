@@ -7,6 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="https://kit.fontawesome.com/13867740db.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 </head>
 <body>
   <section>
@@ -83,9 +86,8 @@
   
   <!------------ 天気予報 ------------>
   <section class="whether">
-    <div class="whether-box" id="wrapper">
+    <div class="whether-box">
       <h1>各地のお天気は？</h1>
-      <!-- <h2>都市の選択</h2> -->
       <div class="city-list">
         <input type="radio" id="cityRadio" name="cityRadio" value="1854345"><label for="radio">沖縄</label>
         <input type="radio" id="cityRadio" name="cityRadio" value="2172797"><label for="radio">オーストラリア -ケアンズ-</label>
@@ -95,18 +97,27 @@
         <input type="radio" id="cityRadio" name="cityRadio" value="1559582"><label for="radio">パラオ</label>
         <input type="radio" id="cityRadio" name="cityRadio" value="1643084"><label for="radio">インドネシア -バリ-</label>
       </div> 
+      <!-- クリックボタン -->
       <button class="btn">Click<i class="fa-solid fa-hand-pointer"></i></button>
-      <div class="weatherMain"> 
+      
+      <!------- 天気表示 ------->
+      <section class="weatherMain"> 
         <h2>現在の天気は</h2>
-        <div><span id = "weather" class="bold"></span></div>
-        <div><span id = "weatherMark" class="bold"></span></div>
-        <p id="icon"></p>
+        <div class="weatherMain-box">
+          <div class="weatherMark">
+            <div><span id = "weather" class="bold"></span></div>
+            <div><span id = "weatherMark" class="bold"></span></div>
+            <p id="icon"></p>
+          </div>
+          <div class="forecast">
+            <div>気温　<span id = "temp"  class="bold"></span>　℃</div>
+            <div>湿度　<span id = "humidity" class="bold"></span>　%</div>
+            <div>風速　<span id = "speed" class="bold"></span>　m</div>
+            <div>風向　<span id = "deg" class="bold"></span>　度</div>
+          </div>
+        </div>
       </div>
-      <div>気温　<span id = "temp"  class="bold"></span>　℃</div>
-      <div>湿度　<span id = "humidity" class="bold"></span>　%</div>
-      <div>風速　<span id = "speed" class="bold"></span>　m</div>
-      <div>風向　<span id = "deg" class="bold"></span>　度</div>
-    </div>
+    </section>
   </section>
   <!---------- フッター ---------->
   <footer class="footer">

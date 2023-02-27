@@ -95,29 +95,25 @@ a .to-top {
   position: fixed;
 }
 
-.whether-box h1 {
+.whether {
+  text-align: center;
+  font-family: "Kosugi Maru", sans-serif;
+}
+.whether h1 {
   font-size: 30px;
 }
-
-.city-list {
-  margin: 50px auto 20px;
+.whether .city-list {
+  margin: 50px 50px 20px;
+  gap: 50px;
 }
-
-input {
+.whether .city-list input {
   margin: 2%;
 }
-
-.bold {
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-#cityRadio {
+.whether .city-list #cityRadio {
   margin-left: 30px;
 }
-
-img {
-  width: 100px;
+.whether .city-list label {
+  margin-right: 20px;
 }
 
 input[type=radio] {
@@ -140,7 +136,7 @@ input[type=radio]::before, input[type=radio]::after {
 
 input[type=radio]::before {
   background-color: #fff;
-  border: 1px solid #c2c1c1;
+  border: 1px solid rgb(172, 172, 172);
   height: 20px;
   width: 20px;
   left: 0px;
@@ -176,19 +172,38 @@ label {
   font-size: 20px;
   margin-bottom: 20px;
 }
-
-.fa-solid {
+.btn .fa-solid {
   margin-left: 5px;
 }
 
 .btn:hover {
-  background-color: #f4f1dc;
+  background-color: #F4F1DC;
   transition: all 0.5s;
+}
+
+img {
+  width: 100px;
+}
+
+.weatherMain-box {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+.weatherMain-box .forecast div {
+  margin-bottom: 5px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .footer {
   margin-top: 40px;
-  background-color: #f4f1dc;
+  background-color: #F4F1DC;
+  color: #80B6BF;
 }
 .footer .footer-sns {
   text-align: center;
@@ -212,7 +227,7 @@ label {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 0px 20px 20px;
+  padding: 0px 20px 0px;
 }
 .footer .footer-site .site-navi {
   display: flex;
@@ -223,5 +238,5 @@ label {
 }
 .footer .footer-site .site-navi a {
   text-decoration: none;
-  color: black;
+  color: #80B6BF;
 }/*# sourceMappingURL=style.css.map */

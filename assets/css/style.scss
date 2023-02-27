@@ -150,33 +150,26 @@ a .to-top {
 
 // ============ whether ============
 
-.whether-box h1{
-  font-size: 30px;
-}
-.city-list{
-  margin: 50px auto 20px;
-}
-// .container{
-//   padding-left: 20%;
-//   padding-right: 20%;
-// }
-input {
-  margin: 2%;
-}
-
-.bold{
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-// ======= city-list =======
-#cityRadio{
-  margin-left: 30px;
-}
-
-// 天気画像大きさ
-img{
-  width: 100px;
+.whether{
+  text-align: center;
+  font-family: 'Kosugi Maru', sans-serif;
+  h1{
+    font-size: 30px;
+  }
+  .city-list{
+    margin: 50px 50px 20px;
+    gap: 50px;
+    input {
+      margin: 2%;
+    }
+    
+    #cityRadio{
+      margin-left: 30px;
+    } 
+    label{
+      margin-right: 20px;
+    } 
+  }
 }
 
 // ==== ラジオボタン ====
@@ -198,13 +191,13 @@ input[type="radio"]::before, input[type="radio"]::after{
 }
 input[type="radio"]::before {
   background-color: #fff;
-  border: 1px solid #c2c1c1;
+  border: 1px solid rgb(172, 172, 172);
   height: 20px;
   width: 20px;
   left: 0px;
 }
 input[type="radio"]::after {
-  background-color: #80B6BF;
+  background-color: $color2;
   opacity: 0;
   height: 14px;
   width: 14px;
@@ -224,43 +217,65 @@ label{
   font-size: 20px;
 }
 
-
-// ====== 天気　ボタン =======
+// ====== 天気 クリックボタン =======
 .btn{
-  border: 2px solid #80B6BF;
+  border: 2px solid $color2;
   border-radius:50px;
   width:150px;
   padding: 15px;
-  background-color: #80B6BF;
+  background-color: $color2;
   font-size: 20px;
   margin-bottom: 20px;
-}
-.fa-solid{
-  margin-left: 5px;
+  
+  .fa-solid{
+    margin-left: 5px;
+  }  
 }
 .btn:hover{
-  background-color: #f4f1dc;
+  background-color: $color1;
   transition: all 0.5s;
 }
 
-// ======= フッター =======
+// 天気画像大きさ
+img{
+  width: 100px;
+}
+.weatherMain-box{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+  .forecast div{
+    margin-bottom: 5px;
+  }
+}
+.bold{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+// ========== フッター ==========
 .footer {
   margin-top: 40px;
-  background-color: #f4f1dc;
+  background-color: $color1;
+  color: $color2;
   .footer-sns{
     text-align: center;
+    
     .sns-navi{
       display: flex;
       justify-content: center;
       padding-top: 10px;
       margin-right: 40px;
+      
       li{
         display: inline-block;
         font-size: 20px;
       }
       a{
         margin-left: 20px;
-        color: #80B6BF;
+        color: $color2;
         font-size: 25px;
       }
     }
@@ -269,16 +284,18 @@ label{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 0px 20px 20px;
+    padding: 0px 20px 0px;
+    
     .site-navi{
       display: flex;
+      
       li{
         list-style: none;
         margin-right: 20px;
       }
       a{
         text-decoration: none;
-        color: black;
+        color: $color2;
       }
     }
   }  
