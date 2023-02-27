@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World Dive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Babylonica&family=Lobster&family=Shantell+Sans:wght@300&display=swap"
+        rel="stylesheet">
     <!-- <link rel="stylesheet" href="../assets/fuka.scss"> -->
     <link rel="stylesheet" href="../assets/css/fuka.css">
 </head>
@@ -16,13 +21,18 @@
             <div class="header-navigation">
                 <ul class="list">
                     <li>
-                        <a href="#info">
+                        <a href="#wrapper">
                             <p class="header__navigation--en">Diving Spots</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#about">
+                        <a href="#weather">
                             <p class="header__navigation--en"> Weather</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#s_01">
+                            <p class="header__navigation--en"> Infomations</p>
                         </a>
                     </li>
                 </ul>
@@ -41,7 +51,8 @@
     </section>
     <p id="page-top" class="up-move">
         <a href="#">
-            <img src="../image/pagetop-removebg-preview.png" alt="" class="to-top"> </a>
+            <img src="../image/pagetop-removebg-preview.png" alt="" class="to-top">
+        </a>
     </p>
     <!-- waves-------------------------------------->
     <div id="wrapper">
@@ -68,14 +79,52 @@
                     <img src="../image/_hw.png" alt="hawaii" class="countries">
                 </div>
             </div>
-            <canvas id="waveCanvas"></canvas>
-        </div>
-        <div class="wave">
-            <p>Diving itemes</p>
-            <canvas id="waveCanvas2"></canvas>
-        </div>
-        <div class="wave">
-            <canvas id="waveCanvas3"></canvas>
+
+
+            <!-- アコーディオン -->
+            <section class="s_01">
+
+                <div class="accordion_one">
+                    <div class="accordion_header">スキューバーダイビングの始め方は？<div class="i-box"><i class="one_i"></i></div>
+                    </div>
+                    <div class="accordion_inner">
+                        <div class="box_one">
+                            <p class="txt_a_ac">スキューバーダイビングをするにはライセンスが必要ですよね。しかし、<br>
+                                ライセンスを取得するだけでなく体験ダイビングもありますので、2種類の方法から選べます<br>
+                                体験ダイビングはタイビングを体験してみたいけれど1人では不安という方にぴったりの方法です。インストラクターが付き添い、<br>
+                                限られた範囲を潜るため、海の中で迷子になってしまう心配がないでしょう。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion_one">
+                    <div class="accordion_header">スキューバーダイビングの魅力は？<div class="i-box"><i class="one_i"></i></div>
+                    </div>
+                    <div class="accordion_inner">
+                        <div class="box_one">
+                            <p class="txt_a_ac">スキューバーダイビングは、普段は見ることのできない海の中の世界を <br>
+                                間近で体感できるのが魅力でしょう。さまざまな種類のサンゴや魚が見られ、海の生き物の暮らしを肌で感じられます。<br>
+                                また、ウミガメと遭遇する確率も非常に高く、ウミガメと一緒に泳ぐといった神秘的な体験も期待できるでしょう。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion_one">
+                    <div class="accordion_header">スキューバーダイビングが実は健康にいい理由とは？<div class="i-box"><i class="one_i"></i></div>
+                    </div>
+                    <div class="accordion_inner">
+                        <div class="box_one">
+                            <p class="txt_a_ac">意外に知られていませんが、スキューバーダイビングは健康にいいとされています <br>
+                                その理由には、高い燃焼効果が挙げられるでしょう。体重50kgの方が約40分間のダイビングをしたときには、<br>
+                                約250kcalものエネルギーを消費するといわれています。同じ時間エアロビクスをするよりもエネルギーを消費します<br>
+                                また、水中では全身運動を行うことで知られていますが、スキューバーダイビングは全身運動をしつつ、<br>
+                                脂肪を多く燃焼させる脚の筋肉を多く使います。そのため、効率よく脂肪の燃焼ができるのです。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+                integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
             <script
                 src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-12/js/5-12.js"></script>
 </body>
