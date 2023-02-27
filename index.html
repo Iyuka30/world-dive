@@ -5,10 +5,128 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://kit.fontawesome.com/13867740db.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <section>
+    <div class="header-inner">
+        <div class="header-navigation">
+            <ul class="list">
+                <li>
+                    <a href="#info">
+                        <p class="header__navigation--en">Diving Spots</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <p class="header__navigation--en"> Weather</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </section>
+  <section class="kv">
+    <span class="main-left mark">
+        <p>World <br>
+            Diving
+        </p>
+    </span>
+    <div class="main-img">
+        <img src="../image/kame.jpg" alt="kame" class="main-kv">
+    </div>
+  </section>
+  <p id="page-top" class="up-move">
+    <a href="#">
+        <img src="../image/pagetop-removebg-preview.png" alt="" class="to-top"> </a>
+  </p>
+  <!-- waves-------------------------------------->
+  <div id="wrapper">
+    <div class="wave">
+        <p>DIVING SPOT <br>
+            INFOMATIONS</p>
+        <div class="info-wrap if-anime">
+            <div class="tag-item">
+                <img src="../image/_aus.png" alt="aus" class="countries">
+            </div>
+            <div class="tag-item">
+                <img src="../image/_bali.png" alt="bali" class="countries">
+            </div>
+            <div class="tag-item">
+                <img src="../image/_plu.png" alt="palau" class="countries">
+            </div>
+            <div class="tag-item">
+                <img src="../image/_jp.png" alt="japan" class="countries">
+            </div>
+            <div class="tag-item">
+                <img src="../image/_mex.png" alt="mexico" class="countries">
+            </div>
+            <div class="tag-item">
+                <img src="../image/_hw.png" alt="hawaii" class="countries">
+            </div>
+        </div>
+        <canvas id="waveCanvas"></canvas>
+    </div>
+    <div class="wave">
+        <p>Diving itemes</p>
+        <canvas id="waveCanvas2"></canvas>
+    </div>
+    <div class="wave">
+        <canvas id="waveCanvas3"></canvas>
+        <script
+            src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-12/js/5-12.js"></script>
+
+
   
+
   
+  <!------------ 天気予報 ------------>
+  <section class="whether">
+    <div class="whether-box" id="wrapper">
+      <h1>各地のお天気は？</h1>
+      <!-- <h2>都市の選択</h2> -->
+      <div class="city-list">
+        <input type="radio" id="cityRadio" name="cityRadio" value="1854345"><label for="radio">沖縄</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="2172797"><label for="radio">オーストラリア -ケアンズ-</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="3531673"><label for="radio">メキシコ -カンクン-</label>
+        <br>
+        <input type="radio" id="cityRadio" name="cityRadio" value="5856195"><label for="radio">ハワイ -ホノルル-</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="1559582"><label for="radio">パラオ</label>
+        <input type="radio" id="cityRadio" name="cityRadio" value="1643084"><label for="radio">インドネシア -バリ-</label>
+      </div> 
+      <button class="btn">Click<i class="fa-solid fa-hand-pointer"></i></button>
+      <div class="weatherMain"> 
+        <h2>現在の天気は</h2>
+        <div><span id = "weather" class="bold"></span></div>
+        <div><span id = "weatherMark" class="bold"></span></div>
+        <p id="icon"></p>
+      </div>
+      <div>気温　<span id = "temp"  class="bold"></span>　℃</div>
+      <div>湿度　<span id = "humidity" class="bold"></span>　%</div>
+      <div>風速　<span id = "speed" class="bold"></span>　m</div>
+      <div>風向　<span id = "deg" class="bold"></span>　度</div>
+    </div>
+  </section>
+  <!---------- フッター ---------->
+  <footer class="footer">
+    <div class="footer-sns">
+      <ul class="sns-navi">
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-site">
+      <ul class="site-navi">
+        <li><a href="#">サイトマップ</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <p><span>All rights reserved <small>&copy;</small>2023.2.27</span></p>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
