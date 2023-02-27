@@ -17,12 +17,11 @@ $(document).ready(function() {
       // $.post("http://api.openweathermap.org/data/2.5/weather?id=" + $("input[id='cityRadio']:checked").val() + "&appid=cc05750ba50400f27ebabbcd6f4c4976&lang=ja&units=metric",  
       $.post("http://api.openweathermap.org/data/2.5/weather?id=" + $("input[id='cityRadio']:checked").val() + "&appid=4791b21ce1b5643034c8d3b29ca534f9&lang=ja&units=metric",  
           function(json){
-              $("#weather").html(json.weather[0].description);
-              $("#humidity").html(json.main.humidity);
-              //lang=jaにすることで華氏から摂氏に変換することなく摂氏表示となる。小数点だけ丸める処理をする
-              $("#temp").html(Math.round(json.main.temp));
-              $("#speed").html(json.wind.speed);
-              $("#deg").html(json.wind.deg);
+              $("#weather").html(json.weather[0].description); 
+              $("#humidity").html(json.main.humidity); //気温
+              $("#temp").html(Math.round(json.main.temp)); //湿度
+              $("#speed").html(json.wind.speed); //風速
+              $("#deg").html(json.wind.deg); //風向
               
               //天気に応じた天気アイコンを表示させる
               switch (json.weather[0].main){

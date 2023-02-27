@@ -376,4 +376,7 @@ img {
 .footer .footer-site .site-navi a {
   text-decoration: none;
   color: #80B6BF;
+}
+.footer .footer-site .site-navi div {
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */
