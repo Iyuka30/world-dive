@@ -1,15 +1,96 @@
-#headear {
+@charset "UTF-8";
+body {
   max-width: 1400px;
+  margin: 0;
+  padding: 0;
 }
 
-.headder-inner {
-  position: relative;
-}
-.headder-inner .main-left {
-  position: absolute;
-}
-.headder-inner .hedear-navigation {
-  position: fixed;
+.header-navigation {
   width: 100%;
-  height: 12vh;
+  height: 80px;
+  background-color: #F4F1DC;
+  position: fixed;
+  z-index: 1;
+}
+.header-navigation .list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+.kv {
+  display: flex;
+}
+.kv .main-left {
+  background-color: #80B6BF;
+  width: 40%;
+  height: 500px;
+}
+.kv p {
+  color: #F4F1DC;
+  text-decoration: line-through;
+  font-size: 75px;
+  font-family: serif;
+  text-align: start;
+  padding: 10px;
+}
+.kv img {
+  width: 100%;
+  height: 500px;
+  background-image: cover;
+  filter: grayscale(100%);
+  /*モノクロ具合を変更したい場合はこの数値を変更*/
+  transition: 0.3s ease-in-out;
+  /*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+.kv img:hover {
+  /*hoverした時の変化*/
+  filter: grayscale(0);
+}
+.kv .maru {
+  background-image: url(../image/maru-removebg-preview.png);
+}
+
+.info-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  gap: 30px;
+}
+.info-wrap .countries {
+  justify-content: space-evenly;
+  width: 300px;
+  height: 300px;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+#wrapper p {
+  text-align: center;
+  font-size: large;
+  /*========= waveを描画するエリア設定 ===============*/
+}
+#wrapper p .wave:nth-child(1) {
+  background: #fff;
+}
+#wrapper p .wave:nth-child(2) {
+  background: #eee;
+}
+#wrapper p .wave:nth-child(3) {
+  background: #eee;
+}
+#wrapper p .wave canvas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+a .to-top {
+  width: 200px;
+  position: fixed;
+  right: 10px;
+  position: fixed;
 }/*# sourceMappingURL=fuka.css.map */
