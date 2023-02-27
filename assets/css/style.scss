@@ -1,0 +1,305 @@
+$color1: #F4F1DC;
+$color2: #80B6BF;
+
+
+@mixin max-width {}
+
+body {
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+}
+
+// headear============
+.header-navigation {
+    width: 100%;
+    height: 80px;
+    background-color: $color1;
+    position: fixed;
+    z-index: 1;
+
+    .list {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px;
+        gap: 20px;
+    }
+}
+
+
+// }Kv==============
+
+.kv {
+    display: flex;
+
+    .main-left {
+        background-color: $color2;
+        width: 40%;
+        height: 500px;
+    }
+
+    p {
+        color: #F4F1DC;
+        text-decoration: line-through;
+        font-size: 75px;
+        font-family: serif;
+        text-align: start;
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 500px;
+        background-image: cover;
+        filter: grayscale(100%);
+        /*モノクロ具合を変更したい場合はこの数値を変更*/
+        transition: .3s ease-in-out;
+        /*移り変わる速さを変更したい場合はこの数値を変更*/
+    }
+
+    img:hover {
+        /*hoverした時の変化*/
+        filter: grayscale(0);
+    }
+
+    .maru {
+        background-image: url(../image/maru-removebg-preview.png);
+    }
+
+
+}
+
+
+
+// info-------------------------
+.info-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    gap: 30px;
+// .if-anime{
+// }
+
+    .countries {
+        justify-content: space-evenly;
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+
+
+
+
+
+
+// waves----------------------
+
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper p {
+    text-align: center;
+    font-size: large;
+    /*========= waveを描画するエリア設定 ===============*/
+    //     .wave {
+    //         position: relative;
+    //     }
+
+    .wave:nth-child(1) {
+        background: #fff;
+    }
+
+    .wave:nth-child(2) {
+        background: #eee;
+    }
+
+    .wave:nth-child(3) {
+        background: #eee;
+    }
+
+    .wave canvas {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+
+
+// Page top-----
+
+a .to-top {
+    width: 200px;
+    position: fixed;
+    right: 10px;
+    position: fixed;
+}
+
+
+
+
+
+
+
+
+// ============ whether ============
+
+.whether{
+  text-align: center;
+  font-family: 'Kosugi Maru', sans-serif;
+  h1{
+    font-size: 30px;
+  }
+  .city-list{
+    margin: 50px 50px 20px;
+    gap: 50px;
+    input {
+      margin: 2%;
+    }
+    
+    #cityRadio{
+      margin-left: 30px;
+    } 
+    label{
+      margin-right: 20px;
+    } 
+  }
+}
+
+// ==== ラジオボタン ====
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  position: relative;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+input[type="radio"]::before, input[type="radio"]::after{
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+input[type="radio"]::before {
+  background-color: #fff;
+  border: 1px solid rgb(172, 172, 172);
+  height: 20px;
+  width: 20px;
+  left: 0px;
+}
+input[type="radio"]::after {
+  background-color: $color2;
+  opacity: 0;
+  height: 14px;
+  width: 14px;
+  left: 4px;
+}
+input[type="radio"]:checked::after {
+  opacity: 1;
+  font-weight: bold;
+}
+
+// === ラジオボタン　テキスト ===
+// ラジオボタン選択したら文字を太字に
+input[type="radio"]:checked+label {
+  font-weight: bold;
+}
+label{
+  font-size: 20px;
+}
+
+// ====== 天気 クリックボタン =======
+.btn{
+  border: 2px solid $color2;
+  border-radius:50px;
+  width:150px;
+  padding: 15px;
+  background-color: $color2;
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+  .fa-solid{
+    margin-left: 5px;
+  }  
+}
+.btn:hover{
+  background-color: $color1;
+  transition: all 0.5s;
+}
+
+// 天気画像大きさ
+img{
+  width: 100px;
+}
+.weatherMain-box{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+  .forecast div{
+    margin-bottom: 5px;
+  }
+}
+.bold{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+// ========== フッター ==========
+.footer {
+  margin-top: 40px;
+  background-color: $color1;
+  color: $color2;
+  .footer-sns{
+    text-align: center;
+    
+    .sns-navi{
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      margin-right: 40px;
+      
+      li{
+        display: inline-block;
+        font-size: 20px;
+      }
+      a{
+        margin-left: 20px;
+        color: $color2;
+        font-size: 25px;
+      }
+    }
+  }
+  .footer-site{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 20px 0px;
+    
+    .site-navi{
+      display: flex;
+      
+      li{
+        list-style: none;
+        margin-right: 20px;
+      }
+      a{
+        text-decoration: none;
+        color: $color2;
+      }
+    }
+  }  
+}
+
+
+

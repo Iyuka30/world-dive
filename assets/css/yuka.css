@@ -103,11 +103,42 @@ label {
   transition: all 0.5s;
 }
 
-footer {
+.footer {
+  margin-top: 40px;
   background-color: #f4f1dc;
-  padding: 10px 20px;
 }
-
-.footer span {
-  padding: 20px 20px;
+.footer .footer-sns {
+  text-align: center;
+}
+.footer .footer-sns .sns-navi {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin-right: 40px;
+}
+.footer .footer-sns .sns-navi li {
+  display: inline-block;
+  font-size: 20px;
+}
+.footer .footer-sns .sns-navi a {
+  margin-left: 20px;
+  color: #80B6BF;
+  font-size: 25px;
+}
+.footer .footer-site {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0px 20px 20px;
+}
+.footer .footer-site .site-navi {
+  display: flex;
+}
+.footer .footer-site .site-navi li {
+  list-style: none;
+  margin-right: 20px;
+}
+.footer .footer-site .site-navi a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=yuka.css.map */
