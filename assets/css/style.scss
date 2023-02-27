@@ -291,6 +291,7 @@ a .to-top {
 .whether{
   text-align: center;
   font-family: 'Kosugi Maru', sans-serif;
+  color: #34393b;
   h1{
     font-size: 30px;
   }
@@ -364,7 +365,7 @@ label{
   background-color: $color2;
   font-size: 20px;
   margin-bottom: 20px;
-  
+  color: #34393b;  
   .fa-solid{
     margin-left: 5px;
   }  
@@ -378,19 +379,23 @@ label{
 img{
   width: 100px;
 }
-.weatherMain-box{
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  margin-top: 30px;
-  .forecast div{
-    margin-bottom: 5px;
+.weatherMain{
+  color: #34393b;
+  .weatherMain-box{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    .forecast div{
+      margin-bottom: 5px;
+    }
+  }
+  .bold{
+    font-weight: bold;
+    font-size: 25px;
   }
 }
-.bold{
-  font-weight: bold;
-  font-size: 25px;
-}
+
 
 
 // ========== フッター ==========

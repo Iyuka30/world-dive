@@ -235,6 +235,7 @@ a .to-top {
 .whether {
   text-align: center;
   font-family: "Kosugi Maru", sans-serif;
+  color: #34393b;
 }
 .whether h1 {
   font-size: 30px;
@@ -308,6 +309,7 @@ label {
   background-color: #80B6BF;
   font-size: 20px;
   margin-bottom: 20px;
+  color: #34393b;
 }
 .btn .fa-solid {
   margin-left: 5px;
@@ -322,17 +324,19 @@ img {
   width: 100px;
 }
 
-.weatherMain-box {
+.weatherMain {
+  color: #34393b;
+}
+.weatherMain .weatherMain-box {
   display: flex;
   justify-content: center;
   gap: 100px;
   margin-top: 30px;
 }
-.weatherMain-box .forecast div {
+.weatherMain .weatherMain-box .forecast div {
   margin-bottom: 5px;
 }
-
-.bold {
+.weatherMain .bold {
   font-weight: bold;
   font-size: 25px;
 }
